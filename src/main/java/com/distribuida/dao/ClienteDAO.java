@@ -1,7 +1,9 @@
 package com.distribuida.dao;
 
-public interface ClienteDAO extend JpaRepository<>{
+import com.distribuida.model.Cliente;
+import org.springframework.data.jpa.repository.JpaRepository;
 
+public interface ClienteDAO extends JpaRepository<Cliente, Integer> {
 
-
+//mi nombre es kevin
 }
