@@ -1,5 +1,7 @@
 package com.distribuida;
 
+import com.distribuida.model.Autor;
+import com.distribuida.model.Categoria;
 import com.distribuida.model.Cliente;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -22,6 +24,14 @@ public class LibreriaApplication {
 				);
 
 		System.out.println(cliente.toString());
+
+		// 2. Instancia de Autor usando los campos reales de tu base de datos
+		Autor autor = new Autor(1, "Gabriel", "García Márquez", "Colombia", "Aracataca", "099999999", "gabito@correo.com");
+		System.out.println(autor.toString());
+
+		// 3. Instancia de Categoría usando los campos reales de tu base de datos
+		Categoria categoria = new Categoria(1, "Novela", "Libros de narrativa de ficción extensos");
+		System.out.println(categoria.toString());
 	}
 
 
